@@ -1,0 +1,18 @@
+* Ultrafast CEST Imaging (UCI) image reconstruction
+
+
+Matlab implementation of the algorithm for Ultrafast CEST Imaging
+(UCI) image reconstruction presented in the following publication: 
+
+ http://www.ncbi.nlm.nih.gov/pubmed/24721681
+
+
+To reproduce the figures from the above publication, simply run the script =MAIN_script.m=. 
+
+The code uses Jeffrey Fessler's image reconstruction toolbox
+(http://web.eecs.umich.edu/~fessler/code/) for the nonuniform FFT
+computation (NUFFT).
+
+
+More details can be found here:
+http://jdoepfert.lima-city.de/software.html#UCIcode
