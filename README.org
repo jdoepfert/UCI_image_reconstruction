@@ -18,23 +18,23 @@ computation (NUFFT).
 The image reconstruction problem in MRI can be described as
 
 
-*A*(*X*) = *Y* 
+*A* (*X*) = *Y* 
 
 
-where $\mathbf{Y}$ is the measured undersampled /k/-space data,
-$\mathbf{X}$ is the (unknown) full image series (in real space) to be
-reconstructed, and $\mathcal{A}$ is a linear operator consisting of
-the calculation of the Fourier transform (FT) of $\mathbf{X}$ and the
+where *Y*  is the measured undersampled /k/-space data,
+*X* is the (unknown) full image series (in real space) to be
+reconstructed, and *A* is a linear operator consisting of
+the calculation of the Fourier transform (FT) of *X* and the
 subsequent evaluation at the /k/-space trajectory's positions. Since
-the data is sub-sampled, $\mathbf{Y}$ is usually smaller than
-$\mathbf{X}$, making the problem ill-posed and not solvable by simply
+the data is sub-sampled, *Y* is usually smaller than
+*X*, making the problem ill-posed and not solvable by simply
 inverting the reconstruction problem.
-Instead, we try to estimate $\mathbf{X}$ in an iterative fashion by
+Instead, we try to estimate *X* in an iterative fashion by
 applying the following prior knowledge: 
 
-+ We assume that the CEST image series $\mathbf{X}$ can be
++ We assume that the CEST image series *X* can be
   approximated by a low-rank matrix (see e.g. [[http://arxiv.org/abs/1305.1773][this paper]])
-+ We drive the solution $\mathbf{X}$ towards zero in areas where no sample is present (limited object support (LS), see for example [[http://onlinelibrary.wiley.com/doi/10.1002/mrm.20285/full][this paper]])
++ We drive the solution *X* towards zero in areas where no sample is present (limited object support (LS), see for example [[http://onlinelibrary.wiley.com/doi/10.1002/mrm.20285/full][this paper]])
  
 The following pseudo-code outlines the algorithm.
 [[file:img/UCIalg.png]]
