@@ -5,7 +5,11 @@ Matlab implementation of the algorithm for reconstructing images from highly
 undersampled magnetic resonance imaging (MRI) data as described in
 detail in [[http://www.ncbi.nlm.nih.gov/pubmed/24721681][this publication]].
 
+#+ATTR_HTML: style="float:center"
 file:img/UCI.png
+
+[[file:img/UCI.png]]
+
 
 To reproduce the figures from the above publication, simply run the script =MAIN_script.m=. 
 
