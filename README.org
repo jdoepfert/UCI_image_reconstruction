@@ -17,10 +17,10 @@ computation (NUFFT).
 ** Algorithm outline
 The image reconstruction problem in MRI can be described as
 
-\begin{equation}
-	\mathcal{A}\left(\mathbf{X}\right) = \mathbf{Y}\quad,
-	\label{eq:imagingproblem}
-\end{equation}
+
+*A*(*X*) = *Y* 
+
+
 where $\mathbf{Y}$ is the measured undersampled /k/-space data,
 $\mathbf{X}$ is the (unknown) full image series (in real space) to be
 reconstructed, and $\mathcal{A}$ is a linear operator consisting of
