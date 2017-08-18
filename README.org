@@ -9,12 +9,12 @@ detail in [[http://www.ncbi.nlm.nih.gov/pubmed/24721681][this publication]].
 [[file:img/UCI.png]]
 
 
+** Run script
 To reproduce the figures from the above publication, simply run the script =MAIN_script.m=. 
 
 The code uses Jeffrey Fessler's image reconstruction toolbox
 (http://web.eecs.umich.edu/~fessler/code/) for the nonuniform FFT
 computation (NUFFT).
-
 
 ** Algorithm outline
 The image reconstruction problem in MRI can be described as
